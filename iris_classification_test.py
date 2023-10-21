@@ -16,6 +16,8 @@ clf.fit(X_train, y_train)
 
 predictions = clf.predict(X_test)
 
+np.savetxt('predict.txt', predictions, fmt='%d')
+
 accuracy = accuracy_score(y_test, predictions)
 
 assert accuracy > 0.8, f'Accuracy is too low: {accuracy}'

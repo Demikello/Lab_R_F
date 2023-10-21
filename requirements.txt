@@ -1,5 +1,5 @@
 setuptools
-sklearn
+scikit-learn
 matplotlib
 numpy
 pandas
